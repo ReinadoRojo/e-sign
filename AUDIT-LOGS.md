@@ -25,5 +25,4 @@ To make it tamper-proof (well, it isn't tamper-proof, it other thing) we are gon
 
 **How?**
 
-No gonna lie, I have no idea... I was thinking of making a SHA-512 or SHA-256 of the last one + new one and then store it, but, I can calculate the hash for next ones after doing a change, so we must add a secret or something.
-
+Well, after some research, a popular way to do it is using HMAC to hash the chain and publishing a log of certain anchors to the public. I will dig deeper on this with more time, but GitHub may be a great way to store logs and having less problems on my side.
